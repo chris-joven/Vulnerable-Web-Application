@@ -17,3 +17,14 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: Application security testing@2022
+  inputs:
+    projectName: 'Vuln Web App Test'
+    syncMode: false
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'JovenTest-ADO-Service'
+    preset: 'Empty preset'
+    customPreset: 'KAR Baseline Standard'
+    avoidDuplicateScans: true
+    enableDependencyScan: false
