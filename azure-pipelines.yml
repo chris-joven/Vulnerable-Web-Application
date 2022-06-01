@@ -1,16 +1,4 @@
 # Starter pipeline
-- task: Application security testing@2022
-  inputs:
-    projectName: 'Vuln Web App Test'
-    syncMode: false
-    enableProxy: false
-    enableSastScan: true
-    CheckmarxService: 'JovenTest-ADO-Service'
-    preset: 'Empty preset'
-    customPreset: 'KAR Baseline Standard'
-    comment: 'JovenTest'
-    avoidDuplicateScans: true
-    enableDependencyScan: false
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
